@@ -1,0 +1,251 @@
+ 	@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+	* {
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+	}
+body {
+    background-image: url("/img/slider/beauty.jpg");
+}
+	
+	#menu_button {
+		display: none; 
+	}
+	
+	#menu_button_nav {
+		display: none;
+	}
+	
+	.search div {
+		font-family: sans-serif;
+		color: black;
+		margin-left: 20px;
+	}
+	
+	.search div a {
+		text-decoration: none;
+		color: black;
+	}
+	
+	.search div a:hover {
+		color: rgba(0, 0, 0, 0.5);
+	}
+	
+	.search span {
+		margin-top: 20px;
+	}
+	
+	.button_mob {
+		width: 100%;
+		margin-top: 20px;
+		/*border: 1px solid #DE1B1B;*/
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: end;
+		-ms-flex-pack: end;
+		justify-content: flex-end;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+	
+	.container {
+		width: 100%;
+	}
+	
+	#header_main {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-ms-flex-pack: distribute;
+		justify-content: space-around;
+		width: 100%;
+		height: 150px;
+		/*border: 1px solid red;*/
+		overflow: hidden;
+		box-shadow: none;
+	}
+	
+	.button_main {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+	}
+	
+	#button1,
+	#button2,
+	#button3,
+	#button4 {
+		width: 200px;
+		height: 50px;
+		cursor: pointer;
+		bottom: 150px;
+		background-color: rgba(222, 27, 27, 0.5);
+		color: rgba(255, 255, 255, 0.97);
+		font-size: 1.5em;
+		border: 2px solid rgba(222, 27, 27, 0.5);
+		border-radius: 50px;
+	}
+	
+	#button1:hover,
+	#button2:hover,
+	#button3:hover,
+	#button4:hover {
+		background-color: rgb(222, 27, 27);
+		transition-duration: 0.5s;
+		color: rgba(255, 255, 255, 0.97);
+		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+        outline: none;
+	}
+	
+	#button1 {
+		opacity: 0;
+		visibility: hidden;
+		animation-name: butt;
+		animation-duration: 32s;
+		animation-delay: 0.1s;
+		animation-iteration-count: infinite;
+		position: absolute;
+	}
+	
+	#button2 {
+		opacity: 0;
+		visibility: hidden;
+		animation-name: butt;
+		animation-duration: 32s;
+		animation-delay: 8s;
+		animation-iteration-count: infinite;
+		position: absolute;
+	}
+	
+	#button3 {
+		opacity: 0;
+		visibility: hidden;
+		animation-name: butt;
+		animation-duration: 32s;
+		animation-delay: 16s;
+		animation-iteration-count: infinite;
+		position: absolute;
+	}
+	
+	#button4 {
+		opacity: 0;
+		visibility: hidden;
+		animation-name: butt;
+		animation-duration: 32s;
+		animation-delay: 24s;
+		animation-iteration-count: infinite;
+		position: absolute;
+	}
+	
+	@-webkit-keyframes butt {
+		0% {
+			opacity: 0;
+		}
+		0.1% {
+			opacity: 1;
+			visibility: visible;
+		}
+		22% {
+			opacity: 1;
+		}
+		28% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+	
+	@-webkit-keyframes anim_button {
+		0% {
+			display: block;
+		}
+		6% {
+			visibility: visible;
+		}
+		15% {
+			opacity: 1;
+		}
+		24% {
+			opacity: 1;
+		}
+		30% {
+			opacity: 1;
+		}
+		100% {
+			visibility: visible;
+		}
+	}
+	
+	@-webkit-keyframes anim_text {
+		0% {
+			top: 0;
+		}
+		0.6% {
+			top: 50%;
+			opacity: 1;
+		}
+		15% {
+			color: rgba(0, 0, 0, 0.5);
+		}
+		20% {
+			opacity: 1;
+		}
+		25% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+	
+	#text_main li {
+		position: absolute;
+		width: 100%;
+		opacity: 0;
+		text-align: center;
+		-webkit-animation-name: anim_text;
+		animation-name: anim_text;
+		-webkit-animation-duration: 32s;
+		animation-duration: 32s;
+		-webkit-animation-timing-function: ease-in;
+		animation-timing-function: ease-in;
+		-webkit-animation-iteration-count: infinite;
+		animation-iteration-count: infinite;
+		z-index: -2;
+	}
+	
+	#text_main li:nth-child(1) {
+		-webkit-animation-delay: 0.2s;
+		-moz-animation-delay: 0.2s;
+		opacity: 0;
+	}
+	
+	#text_main li:nth-child(2) {
+		-webkit-animation-delay: 8.0s;
+		-moz-animation-delay: 8.0s;
+	}
+	
+	#text_main li:nth-child(3) {
+		-webkit-animation-delay: 16.0s;
+		-moz-animation-delay: 16.0s;
+	}
+	
+	#text_main li:nth-child(4) {
+		-webkit-animation-delay: 24.0s;
+		-moz-animation-delay: 24.0s;
+	}
+	
+	#text_main li {
+		color: rgba(255, 255, 255, 0.5);
+		font-size: 2.5em;
+	}
+	 
+
+
+

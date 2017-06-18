@@ -1,0 +1,119 @@
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+.map p {
+	text-align: center;
+	color: rgba(255, 255, 255, 0.83);
+	padding: 10px;
+	font-size: 1.2em;
+}
+
+.form_contact form {
+	margin-top: 20px;
+}
+
+.form_contact form input::-webkit-input-placeholder {
+	color: grey;
+	padding-left: 10px;
+}
+
+form .name,
+form .mail,
+form .phone,
+.send,
+textarea {
+	margin: 2vh auto;
+	min-height: 60px;
+	height: 10vh;
+	width: 40%;
+	border: none;
+	font-size: 1.5em;
+	color: white;
+	padding-left: 10px;
+	outline: none;
+	border-bottom: 5px solid #DE1B1B;
+	transition-duration: 0.3s;
+	transition-property: all;
+	display: block;
+	background-color: rgba(43, 43, 43, 0.8);
+}
+
+.send {
+	background-color: rgba(222, 27, 27, 0.9);
+	width: 41%;
+	height: 8vh;
+	border-radius: 100px;
+}
+
+textarea {
+	height: 20vh;
+	padding-left: 10px;
+	border: 2px solid #DE1B1B;
+}
+
+.name {
+	background: url("../img/contact.png") no-repeat right center;
+	background-size: 40px;
+}
+
+.mail {
+	background: url("../img/mail.png") no-repeat right center;
+	background-size: 40px;
+}
+
+.name:focus,
+.mail:focus,
+.phone:focus,
+textarea:focus {
+	width outline: none;
+	background-color: #2B2B2B;
+	border-bottom: 20px solid #DE1B1B;
+}
+
+.send:hover {
+	color: darkgray;
+	border: none;
+	outline: none;
+	background-color: rgba(255, 255, 255, 0.0);
+	border-bottom: 10px solid #DE1B1B;
+	border-top: 10px solid #DE1B1B;
+	padding: 0;
+	cursor: pointer;
+}
+
+.send:active {
+	border: none;
+	outline: none;
+	border-bottom: 4vh solid #DE1B1B;
+	border-top: 4vh solid #DE1B1B;
+	padding: 0;
+}
+
+iframe {
+	pointer-events: stroke;
+	display: none;
+}
+
+.map {
+	text-align: center;
+}
+
+#click_map {
+	margin-top: 30px;
+	background-color: black;
+	border: none;
+	cursor: pointer;
+	outline: none;
+}
+
+#click_map:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+#click_map:active {
+	background-color: rgb(0, 0, 0);
+}

@@ -1,0 +1,275 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-orient: ver9tical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+#logoall {
+	text-align: center;
+}
+
+.logo {
+	text-align: center;
+}
+
+.telephone {
+	text-align: center;
+}
+
+form .find:hover,
+.find:focus {
+	width: 95%;
+}
+
+
+/*SEARCH*/ 
+
+.search {
+	box-sizing: border-box;
+	padding-left: 0px;
+	padding-right: 0px;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	margin-left: 0;
+	width: 100%;
+}
+.search form {
+	display: flex;
+	width: 100%;
+    justify-content: center;
+}
+
+.search .subm {
+    margin-top: 10px;
+ 
+}
+
+.search .find {
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	box-sizing: border-box;
+	width: 100%;
+	height: 55px;
+}
+
+.search .find:hover {
+	height: 55px;
+}
+
+#footer {
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+#footer p {
+	margin-left: 20px;
+	text-align: center;
+}
+
+#footer-form {
+	margin-left: 5px;
+	font-family: sans-serif;
+	text-align: right;
+}
+
+#footer-form input[type="email"] {
+	width: 100%;
+}
+
+#img_header {
+	-webkit-animation: none;
+	animation: none;
+	margin-top: -200px;
+}
+
+.content {
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+.container content article,
+.container aside {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.blog_img {
+	float: left;
+	margin: 15px;
+	margin-left: 0px;
+	margin-right: 0px;
+	width: 100%;
+}
+
+.gallery a {
+	max-width: 100%;
+	border-left: 0px solid rgba(128, 128, 128, 0.4);
+	border-right: 0px solid rgba(128, 128, 128, 0.4);
+}
+
+@-webkit-keyframes anim_text {
+	0% {
+		top: 0;
+	}
+	0.6% {
+		top: 40%;
+		opacity: 1;
+	}
+	15% {
+		color: rgba(0, 0, 0, 0.5);
+	}
+	20% {
+		opacity: 1;
+	}
+	25% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+#button1,
+#button2,
+#button3,
+#button4 {
+	bottom: 50px;
+}
+
+#text_main {
+	width: 100%;
+}
+
+#header_main {
+	height: 150px;
+}
+
+.form_contact {
+	width: 100%;
+}
+
+form .name,
+form .mail,
+form .phone,
+.send,
+textarea {
+	width: 100%;
+	font-size: 1.0em;
+	padding-left: 5px;
+	box-sizing: border-box;
+}
+
+form .name:focus,
+form .mail:focus,
+form .phone:focus,
+textarea:focus {
+	border: 0px solid #DE1B1B;
+}
+
+.send {
+	font-size: 1.2em;
+	width: 100%;
+	height: 8vh;
+}
+
+.name,
+.mail {
+	background-size: 25px;
+}
+
+.price_list li {
+	min-height: 50px;
+	height: 100%;
+}
+
+.price_list li:nth-child(even) {
+	background-color: #DCDCDC;
+}
+
+.price_list li:hover {
+	background-color: transparent;
+}
+
+.price_list {
+	margin: 0px;
+	list-style-type: none;
+}
+
+.price_list li p {
+	line-height: 1em;
+	padding-top: 25px;
+}
+
+.butt_article {
+	width: 170px;
+}
+
+.butt_left a,
+.butt_right a {
+	width: auto;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: 5px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 0.9em;
+}
+
+#portraite p {
+	color: white;
+}
+
+header h2 {
+	padding-top: 15px;
+	line-height: 1.2em;
+}
+
+/*SLIDER*/
+.slider li:nth-child(1){
+background-image: url("../img/slider/beauty_mob.jpg"); 
+}
+
+.slider li:nth-child(2){
+-webkit-animation-delay: 8.0s;
+-moz-animation-delay: 8.0s;
+background-image: url("../img/slider/girl_autumn_mob.jpg"); 
+}
+.slider li:nth-child(3){
+-webkit-animation-delay: 16.0s;
+-moz-animation-delay: 16.0s;
+background-image: url("../img/slider/little_girl_mob.jpg"); 
+}
+
+.slider li:nth-child(4){
+-webkit-animation-delay: 24.0s;
+-moz-animation-delay: 24.0s;
+background-image: url("../img/slider/canon_mob.jpg"); 
+}
+
+#soc_mob {
+	display: flex;
+	justify-content: space-around;
+}
+
+.footer-social {
+	
+	
+	
+	display: block;
+}
+
+
